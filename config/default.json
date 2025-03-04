@@ -1,0 +1,30 @@
+{
+  "translator": {
+    "model": "text-translation-3",
+    "max_retries": 3,
+    "retry_delay": 1.0
+  },
+  "detector": {
+    "min_confidence": 0.5,
+    "context_size": 50
+  },
+  "parser": {
+    "supported_extensions": {
+      "python": [".py", ".pyi"],
+      "javascript": [".js", ".jsx", ".ts", ".tsx"],
+      "java": [".java"],
+      "go": [".go"],
+      "rust": [".rs"],
+      "c": [".c", ".h"],
+      "cpp": [".cpp", ".hpp", ".cc", ".hh"]
+    }
+  },
+  "formatter": {
+    "syntax_highlighting": true,
+    "show_context": true
+  },
+  "processor": {
+    "batch_size": 10,
+    "parallel_processes": 1
+  }
+}
